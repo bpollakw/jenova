@@ -13,10 +13,10 @@ Midifile by Pete Goodeve (http://www.goodeveca.net/midifile_rb/). It only works 
 
 Timidity (http://timidity.sourceforge.net)
 
-A DNA sequence in fasta format (only supported until now)
+A DNA sequence in fasta format or genbank/ape format (with extensions so that the script can recognize it)
 
 # Usage
-ruby dna_to_midi.rb seq
+ruby dna_to_midi.rb seq.fa or pET.ape
 
 timidity out.mid
 
