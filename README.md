@@ -16,7 +16,7 @@ Timidity (http://timidity.sourceforge.net)
 A DNA sequence in fasta format or genbank/ape format (with extensions so that the script can recognize it)
 
 # Usage
-ruby dna_to_midi.rb seq.fa or pET.ape
+ruby dna_to_midi.rb seq.fa or seq.ape
 
 timidity out.mid
 
