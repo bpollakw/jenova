@@ -1,0 +1,84 @@
+LOCUS       Z37465                  1420 bp    DNA     linear   PLN 18-APR-2005
+DEFINITION  T.chamaedrys chloroplast rbcL gene for rubisco (large subunit)
+            (partial).
+ACCESSION   Z37465
+VERSION     Z37465.1  GI:3355853
+KEYWORDS    rbcL gene; Rubisco.
+SOURCE      chloroplast Teucrium chamaedrys
+  ORGANISM  Teucrium chamaedrys
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliophyta; eudicotyledons; Gunneridae;
+            Pentapetalae; asterids; lamiids; Lamiales; Lamiaceae; Teucrioideae;
+            Teucrium.
+REFERENCE   1
+  AUTHORS   Kaufmann,M. and Wink,M.
+  TITLE     Phylogenetic relationships between some members of the sub-family
+            lamioideae inferred from nucleotide squences of the root gene
+  JOURNAL   Bot. Acta 109, 139-148 (1996)
+REFERENCE   2  (bases 1 to 1420)
+  AUTHORS   Kaufmann,M. and Wink,M.
+  JOURNAL   Unpublished
+REFERENCE   3  (bases 1 to 1420)
+  AUTHORS   Kaufmann,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-SEP-1994) M.Kaufmann, Institut fuer Pharmazeutische
+            Biologie, Im Neuenheimer Feld 364, 69121 Heidelberg, Germany
+FEATURES             Location/Qualifiers
+     source          1..1420
+                     /organism="Teucrium chamaedrys"
+                     /organelle="plastid:chloroplast"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:53176"
+     gene            1..>1420
+                     /gene="rbcL"
+     CDS             1..>1420
+                     /gene="rbcL"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="ribulose-1,5-bisphosphate carboxylase/oxygenase
+                     large subunit"
+                     /protein_id="CAA85713.1"
+                     /db_xref="GI:3355854"
+                     /db_xref="GOA:O78382"
+                     /db_xref="HSSP:3RUB"
+                     /db_xref="InterPro:IPR000685"
+                     /db_xref="InterPro:IPR017443"
+                     /db_xref="InterPro:IPR017444"
+                     /db_xref="InterPro:IPR020878"
+                     /db_xref="InterPro:IPR020888"
+                     /db_xref="UniProtKB/TrEMBL:O78382"
+                     /translation="MSPQTETKASVGFKAGVKEYKLTYYTPEYETKDTDILAAFRVTP
+                     QPGVPPEEAGAAVAAESSTGTWTTVWTDGLTSLDRYKGRCYHIEPVLGEKDQYICYVA
+                     YPLDLFEEGSVTNMFTSIVGNVFGFKALRALRLEDLRIPPAYIKTFQGPPHGIQVGRD
+                     KLNKYGRPLLGCTIKPKLGLSAKNYGRAVYECLRGGLDFTKDDENVNSQPFMRWRDRF
+                     LFCAEALYKAQAETGEIKGHYLNATAGTCEEMIKRAVFARELGVPIVMHDYLTGGFTA
+                     NTSLSHYCRDNGLLLHIHRAMHAVIDRQKNHGMHFRVLAKALRLSGGDHIHSGTVVGK
+                     LEGEREITLGFVDLLRDDFIEKDRSRGIYFTQDWVSLPGVIPVASGGIHVWHMPALTE
+                     IFGDDSVLQFGGGTLGHPWGNAPGAVANRVALEACVQARNEGRNLAAEGNAIIREASK
+                     WSPELAAACEVWKEIKFEFPAMD"
+ORIGIN      
+        1 atgtcaccac aaacagagac taaagcaagt gttggattca aagcgggtgt taaagagtac
+       61 aaattgactt attatactcc tgaatacgaa accaaagata ctgatatctt ggcagcattc
+      121 cgagtaactc ctcaacccgg agttccacct gaagaagcag gggccgcggt agctgccgaa
+      181 tcttctactg gtacatggac aactgtgtgg accgatggac ttaccagcct tgatcgttac
+      241 aaagggcgat gctaccacat cgagcccgtt cttggagaaa aagatcaata tatctgttat
+      301 gtagcttacc ctttagacct ttttgaagaa ggttctgtta ctaacatgtt tacttcgatt
+      361 gtaggaaatg tatttggatt caaagcccta cgtgctctac gtctggaaga tctgcgaatc
+      421 cctcctgctt atattaaaac tttccaaggc ccacctcatg ggatccaagt tgggagagat
+      481 aaattgaaca agtacggccg tcctctgttg ggatgtacta ttaaaccgaa attggggtta
+      541 tccgctaaaa actacggtag agcagtttat gaatgtcttc gcggtggact tgattttacc
+      601 aaagatgatg agaacgtgaa ctcccagcca tttatgcgtt ggagggatcg cttcttattt
+      661 tgtgccgaag cactttataa agcacaggct gaaacaggtg aaatcaaagg gcattacttg
+      721 aatgctactg caggtacatg cgaagaaatg atcaaaagag ctgtatttgc tagagaattg
+      781 ggagttccta tcgtaatgca tgactactta acaggaggat tcactgcaaa tactagcttg
+      841 tctcattatt gccgagataa tggcttactt cttcacattc accgtgcaat gcatgcagtt
+      901 attgatagac agaagaatca tggtatgcac ttccgtgtac tagctaaagc gttacgtctg
+      961 tctggtggag atcatattca ctctggtacc gtagtaggta aacttgaagg agaaagagaa
+     1021 attactttag gctttgttga tttactacgt gatgatttta ttgaaaaaga tcgaagtcgt
+     1081 ggtatttatt tcactcaaga ttgggtctct ctaccaggtg ttattcccgt ggcttcgggg
+     1141 ggtattcacg tttggcatat gcctgctctg accgagatct ttggggatga ttccgtacta
+     1201 cagtttggtg gaggaacttt agggcaccct tggggtaatg cgccaggtgc cgtagctaac
+     1261 cgagtagctc tagaagcatg tgtacaagct cgtaatgaag gacgtaatct tgctgctgag
+     1321 ggtaatgcaa ttatccgtga ggctagcaaa tggagtcctg aactagctgc cgcttgtgag
+     1381 gtatggaaag agatcaaatt tgaattccca gcaatggata
+//

@@ -30,7 +30,7 @@ out.add genText(10, LYRIC, '## Jenova DNA MIDI player... ## ')	# Yeah, well...
 
 # Set instruments
 out.add genProgramChange(0, 36)	# Set default channel 1 to bass
-out.add genProgramChange(0, 5, 2)	# Set channel 2 to rhodes piano
+out.add genProgramChange(0, 116, 2)	# Set channel 2 to wood block
 out.add genProgramChange(0, 10, 3)	# Set channel 3 glockenspiel
 #out.add genProgramChange(0, 1, 3)# End of rip
 
@@ -38,19 +38,19 @@ out.add genProgramChange(0, 10, 3)	# Set channel 3 glockenspiel
 ## Function for assigning notes to different nucleotides
 def gen_note(nucleotide)
   if nucleotide == "a"
-    note = 22
+    note = 23
   elsif nucleotide == "c"
-    note = 27
+    note = 28
   elsif nucleotide == "t"
-    note = 34
+    note = 35
   elsif nucleotide == "g"
-    note = 39
+    note = 40
   else
     note = 127
   end
 
 # Make it less mechanic
-  x = rand (1..2)
+  x = rand (0..1)
   note = note + x
 
 # Send note
@@ -157,9 +157,9 @@ file.each do |sequence|
 
 # Lets do CDS track
     sequence.each_cds do |cds|
-      data = cds.position.split('(')
+      data = cds.position.delete(">").split('(')
       if data[0] == "complement"
-        data[1] = data[1].delete(')')
+        data[1] = data[1].delete(")")
         range = data[1].split('..').map{|d| Integer(d)}
       else
         range = data[0].split('..').map{|d| Integer(d)}
@@ -207,7 +207,7 @@ file.each do |sequence|
 
     # Same for gene
     sequence.each_gene do |gene|
-      data = gene.position.split('(')
+      data = gene.position.delete(">").split('(')
       if data[0] == "complement"
         data[1] = data[1].delete(')')
         range = data[1].split('..').map{|d| Integer(d)}
