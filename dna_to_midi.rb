@@ -30,7 +30,7 @@ out.add genText(10, LYRIC, '## Jenova DNA MIDI player... ## ')	# Yeah, well...
 
 # Set instruments
 out.add genProgramChange(0, 36)	# Set default channel 1 to bass
-out.add genProgramChange(0, 116, 2)	# Set channel 2 to wood block
+out.add genProgramChange(0, 77, 2)	# Set channel 2 to wood block
 out.add genProgramChange(0, 10, 3)	# Set channel 3 glockenspiel
 #out.add genProgramChange(0, 1, 3)# End of rip
 
@@ -157,17 +157,17 @@ file.each do |sequence|
 
 # Lets do CDS track
     sequence.each_cds do |cds|
+		puts cds.position
       data = cds.position.delete(">").split('(')
-      if data[0] == "complement"
-        data[1] = data[1].delete(")")
-        range = data[1].split('..').map{|d| Integer(d)}
+      if data[0].to_s == "complement"
+		  break
       else
         range = data[0].split('..').map{|d| Integer(d)}
       end
 
       # Find position in sequence, assign cds and translate into protein
       cds = a[range[0]-1..range[1]-1].translate
-      pos = (range[0]-1) * 100 * 3
+      pos = (range[0]-1) * 100
 
       # Until the end of sequence
       until cds.length == 0 do
